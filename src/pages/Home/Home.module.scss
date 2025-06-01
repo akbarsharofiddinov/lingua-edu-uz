@@ -1,0 +1,43 @@
+.home-page {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 80px;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+
+    .cart-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 100px;
+        height: 100px;
+
+        transition: transform 0.3s;
+      }
+
+      p {
+        font-size: 16px;
+        color: #333;
+
+        transition: color 0.3s;
+      }
+
+      &:hover {
+        img {
+          transform: translateY(-5px);
+        }
+
+        p {
+          color: #00a6fb;
+        }
+      }
+    }
+  }
+}

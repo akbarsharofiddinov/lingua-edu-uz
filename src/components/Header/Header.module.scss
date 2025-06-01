@@ -1,0 +1,59 @@
+.header {
+  margin-top: 50px;
+  background-color: #00a6fb;
+  color: #fff;
+  padding: 15px 40px;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sidebarBtn {
+      background-color: transparent;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      img {
+        width: 60px;
+        height: auto;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        span {
+          font-size: 12px;
+          &:first-child {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .profileBox {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      p {
+        font-size: 18px;
+
+        &:first-child {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
