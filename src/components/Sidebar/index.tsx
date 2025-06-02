@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { RiFileList2Line } from 'react-icons/ri'
 import { GrScorecard } from 'react-icons/gr'
 import { MdLocalLibrary } from 'react-icons/md'
+import logo from "@/assets/images/PNG 1.png"
 
 const Sidebar: React.FC = () => {
 
@@ -14,47 +15,47 @@ const Sidebar: React.FC = () => {
   return (
     <>
       <div className={styles.sidebar} data-state={sidebar ? "active" : ""}>
-        <h3 className={styles.title}>
-          Добро пожаловать
-        </h3>
+        <div className={styles.logo}>
+          <img src={logo} alt="" />
+        </div>
         <ul className={styles.sidebarMenu}>
           <li className={styles.sidebarMenu_item}>
             <a href="#">
-              <span><FaBook /></span>Мои предметы
+              <span><FaBook /></span><span>Мои предметы</span>
             </a>
           </li>
           <li className={styles.sidebarMenu_item}>
             <a href="#">
-              <span><FaTableList /></span>Расписания
+              <span><FaTableList /></span><span>Расписания</span>
             </a>
           </li>
           <li className={styles.sidebarMenu_item}>
             <a href="#">
-              <span><FaPaperclip /></span>Задания
+              <span><FaPaperclip /></span><span>Задания</span>
             </a>
           </li>
           <li className={styles.sidebarMenu_item}>
             <a href="#">
-              <span><RiFileList2Line /></span>Отработка
+              <span><RiFileList2Line /></span><span>Отработка</span>
             </a>
           </li>
           <li className={styles.sidebarMenu_item}>
             <a href="#">
-              <span><RiFileList2Line /></span>Экзамены
+              <span><RiFileList2Line /></span><span>Экзамены</span>
             </a>
           </li>
           <li className={styles.sidebarMenu_item}>
             <a href="#">
-              <span><GrScorecard /></span>Баллы
+              <span><GrScorecard /></span><span>Баллы</span>
             </a>
           </li>
           <li className={styles.sidebarMenu_item}>
             <Link to="/e-library">
-              <span><MdLocalLibrary /></span>Электронная библиотека
+              <span><MdLocalLibrary /></span><span>Электронная библиотека</span>
             </Link>
           </li>
         </ul>
-      </div>
+      </div >
     </>
   )
 }

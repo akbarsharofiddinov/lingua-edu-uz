@@ -15,6 +15,14 @@
       align-items: center;
       gap: 10px;
 
+      position: relative;
+
+      a {
+        position: absolute;
+        inset: 0;
+        z-index: 99;
+      }
+
       img {
         width: 100px;
         height: 100px;

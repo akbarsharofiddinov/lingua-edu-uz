@@ -1,13 +1,51 @@
 .sectionBanner {
+  margin: 40px;
+
   .swiper {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.06);
+
     .swiperSlide {
       width: 100%;
-      height: 600px;
+      height: 500px;
+      position: relative;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      a {
+        position: absolute;
+        top: 70%;
+        right: 50%;
+        transform: translate(100%, 50%);
+        z-index: 5;
+        background-color: #00a6fb;
+        padding: 14px 24px;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 16px;
+        box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.2);
+
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: translate(100%, 30%);
+        }
+
+        &.library {
+          right: 200px;
+          bottom: 40px;
+          top: unset !important;
+          transform: translate(0, 0%);
+
+          &:hover {
+            transform: translateY(-10%);
+          }
+        }
       }
     }
   }
