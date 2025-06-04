@@ -9,12 +9,19 @@
     align-items: center;
     justify-content: space-between;
 
-    .sidebarBtn {
-      background-color: transparent;
-      color: #fff;
-      font-size: 20px;
-      border: none;
-      cursor: pointer;
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+
+      .sidebarBtn,
+      .videoConferense {
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
     }
 
     .logo {

@@ -72,7 +72,7 @@ const data = [
   },
   {
     id: 10,
-    name: 'Выбор предмета',
+    name: 'Premium курсы',
     image: subjectChoose,
     link: ""
   },
