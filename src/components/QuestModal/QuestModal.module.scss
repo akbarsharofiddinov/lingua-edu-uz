@@ -1,0 +1,127 @@
+.quest-modal {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+
+  .inner {
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: auto;
+
+    & > p {
+      font-size: 18px;
+      color: #555;
+      padding: 20px;
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .quest-item,
+      .active-quest {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 2px solid #bbb;
+
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          & > div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            span {
+              font-size: 16px;
+              color: #444;
+            }
+
+            & > p {
+              color: #00a6fb;
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+
+          .icon {
+            color: #555;
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+
+        .body {
+          max-height: 0px;
+          overflow: hidden;
+
+          .desc {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 20px;
+          }
+
+          .input-box {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 15px;
+
+            label {
+              color: #00a6fb;
+              font-size: 18px;
+              font-weight: 600;
+              border-bottom: 2px solid #00a6fb;
+              cursor: pointer;
+            }
+
+            & > p {
+              font-size: 14px;
+              color: #444;
+            }
+
+            .file {
+              p {
+                display: flex;
+                align-items: end;
+                flex-direction: column;
+                gap: 10px;
+                color: #555;
+
+                .removeFile {
+                  font-size: 16px;
+                  cursor: pointer;
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+
+        &.active-quest {
+          .top {
+            margin-bottom: 20px;
+          }
+
+          .icon {
+            transform: rotate(180deg);
+          }
+
+          .body {
+            max-height: 1000px !important;
+          }
+        }
+      }
+    }
+  }
+}

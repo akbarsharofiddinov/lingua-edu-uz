@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from "@/components";
-import { ELibrary, Home, Meeting, Quests, Schedules, Subjects } from "@/pages"
+import { ELibrary, Exams, Home, Meeting, Quests, Schedules, Scores, Subjects } from "@/pages"
 
 const App: React.FC = () => {
   const router = createBrowserRouter([
@@ -31,15 +31,15 @@ const App: React.FC = () => {
         },
         {
           path: 'working_off',
-          element: <Quests />
+          element: <Exams />
         },
         {
           path: 'exams',
-          element: <Quests />
+          element: <Exams />
         },
         {
           path: 'scores',
-          element: <Quests />
+          element: <Scores />
         },
         {
           path: 'meeting',

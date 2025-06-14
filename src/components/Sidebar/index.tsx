@@ -40,12 +40,12 @@ const Sidebar: React.FC = () => {
             </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <Link to="/quests">
+            <Link to="/exams">
               <span><RiFileList2Line /></span><span>Экзамены</span>
             </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <Link to="/quests">
+            <Link to="/scores">
               <span><GrScorecard /></span><span>Баллы</span>
             </Link>
           </li>
