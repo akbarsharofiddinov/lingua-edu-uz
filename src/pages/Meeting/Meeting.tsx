@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Meeting.module.scss'
 import Webcam from 'react-webcam'
+import { IoPersonCircle } from 'react-icons/io5';
 
 const videoConstraints = {
   width: 1280,
@@ -11,12 +12,6 @@ const videoConstraints = {
 const Meeting: React.FC = () => {
 
   const webcamRef = React.useRef<any>(null);
-  const capture = React.useCallback(
-    () => {
-      const imageSrc = webcamRef.current.getScreenshot();
-    },
-    [webcamRef]
-  );
 
   return (
     <>
@@ -35,16 +30,26 @@ const Meeting: React.FC = () => {
             </div>
           </div>
           <div className={styles.chat}>
-            <div className="messages">
-              <div className="message">
-                <div className="left">
-                  <p>user</p>
-                  <p>всем привет</p>
+            <div className={styles.messages}>
+              <div className={styles.message}>
+                <div className={styles.left}>
+                  <p> <span><IoPersonCircle /></span> <span>Али</span></p>
+                  <h4>Всем привет</h4>
+                </div>
+                <p>10:21</p>
+              </div>
+              <div className={styles.message}>
+                <div className={styles.left}>
+                  <p> <span><IoPersonCircle /></span> <span>Вы</span></p>
+                  <h4>Привет</h4>
                 </div>
                 <p>10:21</p>
               </div>
             </div>
-            <div className="message-input"></div>
+            <div className={styles['message-input']}>
+              <input type="text" placeholder='сообщение' />
+              <button>Отправить</button>
+            </div>
           </div>
         </div>
       </div>
