@@ -20,34 +20,34 @@ const Sidebar: React.FC = () => {
         </div>
         <ul className={styles.sidebarMenu}>
           <li className={styles.sidebarMenu_item}>
-            <a href="#">
-              <span><FaBook /></span><span>Мои предметы</span>
-            </a>
+            <Link to="/subjects">
+              <span><FaBook /></span><span>Предметы</span>
+            </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <a href="#">
+            <Link to="/schedules">
               <span><FaTableList /></span><span>Расписания</span>
-            </a>
+            </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <a href="#">
+            <Link to="/quests">
               <span><FaPaperclip /></span><span>Задания</span>
-            </a>
+            </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <a href="#">
+            <Link to="/quests">
               <span><RiFileList2Line /></span><span>Отработка</span>
-            </a>
+            </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <a href="#">
+            <Link to="/quests">
               <span><RiFileList2Line /></span><span>Экзамены</span>
-            </a>
+            </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
-            <a href="#">
+            <Link to="/quests">
               <span><GrScorecard /></span><span>Баллы</span>
-            </a>
+            </Link>
           </li>
           <li className={styles.sidebarMenu_item}>
             <Link to="/e-library">

@@ -1,3 +1,6 @@
 export { default as Home } from "./Home"
 export { default as ELibrary } from "./ELibrary"
 export { default as Subjects } from "./Subjects"
+export { default as Schedules } from "./Schedules"
+export { default as Quests } from "./Quests"
+export { default as Meeting } from "./Meeting/Meeting"

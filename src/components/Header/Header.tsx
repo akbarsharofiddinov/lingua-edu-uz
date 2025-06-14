@@ -20,9 +20,9 @@ const Header: React.FC = () => {
             <button className={styles.sidebarBtn} onClick={() => dispatch(setSidebar(!sidebar))}>
               <FaBars />
             </button>
-            <button className={styles.videoConferense}>
+            <Link to={'/meeting'} className={styles.videoConferense}>
               <FaVideo />
-            </button>
+            </Link>
           </div>
           <Link to="/" className={styles.logo}>
             <img src={logo} alt="" />

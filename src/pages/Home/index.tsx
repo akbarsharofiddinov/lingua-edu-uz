@@ -29,8 +29,8 @@ const data = [
     link: ""
   },
   {
-    id: 3,
-    name: 'Контракт',
+    id: 3,  
+    name: 'Отработка',
     image: contract,
     link: ""
   },
@@ -72,7 +72,7 @@ const data = [
   },
   {
     id: 10,
-    name: 'Premium курсы',
+    name: 'Премиум курсы',
     image: subjectChoose,
     link: ""
   },

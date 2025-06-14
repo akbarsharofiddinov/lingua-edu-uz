@@ -1,29 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from './HeaderTop.module.scss'
 import { LiaTelegramPlane } from 'react-icons/lia'
 import { FaInstagram } from 'react-icons/fa6'
 import { RiMegaphoneFill } from 'react-icons/ri'
 import { CiGlobe } from 'react-icons/ci'
+import TimeBox from './TimeBox'
 
 const HeaderTop: React.FC = () => {
-  const [currentTime, setCurrentTime] = React.useState(new Date());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTime(new Date())
-    }, 1000);
-
-    return () => clearInterval(interval)
-  }, []);
 
   return (
     <>
       <section className={styles.headerTop}>
         <div className={styles.inner}>
-          <div className={styles.timeBox}>
-            <p>{currentTime.toLocaleDateString()}</p>
-            <p>{currentTime.toLocaleTimeString()}</p>
-          </div>
+
+          <TimeBox />
+
           <div className={styles.sociaLinks}>
             <a href='https://t.me/uzbekistan' target='_blank' rel='noopener noreferrer'>
               <LiaTelegramPlane />
@@ -40,4 +31,7 @@ const HeaderTop: React.FC = () => {
   )
 }
 
-export default HeaderTop
+export default React.memo(HeaderTop, (prev, next) => {
+  console.log("Comparing HeaderTop props", prev, next);
+  return true; // Prevent re-render if props didn't change
+});

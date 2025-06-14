@@ -1,0 +1,78 @@
+.schedules {
+  padding: 20px;
+  margin: 40px;
+  min-height: 60vh;
+
+  .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .schedule-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 11px 10px 15px -3px rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 11px 10px 15px -3px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 11px 10px 15px -3px rgba(0, 0, 0, 0.15);
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: 2px solid #00a6fb;
+        border-bottom: none;
+        border-radius: 10px 10px 0 0;
+
+        p {
+          color: #333;
+          font-size: 18px;
+
+          &:last-child {
+            color: #999;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .body {
+        display: flex;
+        flex-direction: column;
+
+        .item {
+          padding: 10px 15px;
+          border: 1px solid #ddd;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          & > p {
+            font-size: 18px;
+            color: #555;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 40px;
+
+    p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+  }
+}

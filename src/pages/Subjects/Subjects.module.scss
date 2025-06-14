@@ -1,0 +1,63 @@
+.subjects {
+  padding: 20px;
+  margin: 40px;
+  min-height: 60vh;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .semester,
+    .activeSemester {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      background-color: #fff;
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 15px;
+        border-bottom: 2px solid #00a7fb6c;
+
+        span {
+          opacity: 0.3;
+          font-size: 20px;
+          cursor: pointer;
+
+          transition: opacity 0.3s, transform 0.3s ease-in-out;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      &.semester {
+        .subjects-table {
+          max-height: 0px;
+
+          transition: max-height 0.3s ease-in-out;
+        }
+      }
+
+      &.activeSemester {
+        .top {
+          span {
+            transform: rotate(180deg);
+          }
+        }
+
+        .subjects-table {
+          max-height: 1000px !important;
+
+          transition: max-height 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
