@@ -7,6 +7,7 @@ import { RiFileList2Line } from 'react-icons/ri'
 import { GrScorecard } from 'react-icons/gr'
 import { MdLocalLibrary } from 'react-icons/md'
 import logo from "@/assets/images/PNG 1.png"
+import { LuCrown } from 'react-icons/lu'
 
 const Sidebar: React.FC = () => {
 
@@ -47,6 +48,11 @@ const Sidebar: React.FC = () => {
           <li className={styles.sidebarMenu_item}>
             <Link to="/scores">
               <span><GrScorecard /></span><span>Баллы</span>
+            </Link>
+          </li>
+          <li className={styles.sidebarMenu_item}>
+            <Link to="/premium-course">
+              <span><LuCrown /></span><span>Премиум курсы</span>
             </Link>
           </li>
           <li className={styles.sidebarMenu_item}>

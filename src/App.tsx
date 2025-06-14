@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from "@/components";
-import { ELibrary, Exams, Home, Meeting, Quests, Schedules, Scores, Subjects } from "@/pages"
+import { Auth, ELibrary, Exams, Home, Meeting, Quests, Schedules, Scores, Subjects } from "@/pages"
 
 const App: React.FC = () => {
   const router = createBrowserRouter([
@@ -38,14 +38,23 @@ const App: React.FC = () => {
           element: <Exams />
         },
         {
+          path: 'premium-course',
+          element: <Exams />
+        },
+        {
           path: 'scores',
           element: <Scores />
         },
         {
           path: 'meeting',
           element: <Meeting />
-        }
+        },
+
       ]
+    },
+    {
+      path: "login",
+      element: <Auth />
     }
   ])
   return (

@@ -1,0 +1,85 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inner {
+    background-color: #fff;
+    width: 750px;
+    height: 450px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    display: flex;
+
+    .left {
+      background-color: #0582ca;
+      flex: 40%;
+      display: flex;
+      align-items: center;
+    }
+
+    .right {
+      flex: 60%;
+      padding: 40px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 40px;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+
+        label {
+          font-size: 18px;
+          color: #666;
+        }
+
+        input {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #bbb;
+          border-radius: 6px;
+          font-size: 16px;
+          color: #666;
+
+          transition: border-color 0.2s ease-in-out;
+
+          &:focus {
+            border: 1px solid #0582ca;
+          }
+        }
+      }
+
+      .buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+
+        button {
+          font-size: 16px;
+          background-color: #0582ca;
+          color: #fff;
+          border: none;
+          padding: 12px 24px;
+          min-width: 160px;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:first-child {
+            text-decoration: underline;
+            background-color: transparent;
+            color: #0582ca;
+          }
+        }
+      }
+    }
+  }
+}

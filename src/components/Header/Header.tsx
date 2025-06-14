@@ -31,10 +31,10 @@ const Header: React.FC = () => {
               <span>Maqsadlaringizga biz bilan erishing</span>
             </div>
           </Link>
-          <div className={styles.profileBox}>
+          <Link to={'/login'} className={styles.profileBox}>
             <p><BsPersonCircle /></p>
-            <p>Islam</p>
-          </div>
+            <p>Войти</p>
+          </Link>
         </div>
       </header>
     </>
