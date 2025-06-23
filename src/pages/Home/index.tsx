@@ -1,7 +1,7 @@
 import React from 'react'
 import { Banner } from '@/components'
 import styles from "./Home.module.scss"
-import testo_game from "@/assets/images/home-content/exams.png"
+import testo_game from "@/assets/images/home-content/Wavy_Tech-17_Single-11.jpg"
 import attendances from "@/assets/images/home-content/attendance.png"
 import contract from "@/assets/images/home-content/contract.png"
 import curriculum from "@/assets/images/home-content/curriculum.png"
@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom'
 const data = [
   {
     id: 1,
-    name: 'Тесто',
+    name: 'Переводчик En-Ru-Uz-Kk',
     image: testo_game,
     link: ""
   },
@@ -36,13 +36,13 @@ const data = [
   },
   {
     id: 4,
-    name: 'Учебная программа',
+    name: 'Ibrat Farzandlari',
     image: curriculum,
     link: ""
   },
   {
     id: 5,
-    name: 'Документ',
+    name: 'Quiz',
     image: document,
     link: ""
   },

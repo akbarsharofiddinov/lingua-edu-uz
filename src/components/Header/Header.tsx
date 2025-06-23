@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           <Link to="/" className={styles.logo}>
             <img src={logo} alt="" />
             <div>
-              <span>Lindua edu uz <br /> online ta'lim platformasi</span>
+              <span>Lingua.edu.uz <br /> online ta'lim platformasi</span>
               <span>Maqsadlaringizga biz bilan erishing</span>
             </div>
           </Link>

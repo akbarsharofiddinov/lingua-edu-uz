@@ -5,9 +5,10 @@ import { useAppSelector } from '@/store/hooks'
 import { Link } from 'react-router-dom'
 import { RiFileList2Line } from 'react-icons/ri'
 import { GrScorecard } from 'react-icons/gr'
-import { MdLocalLibrary } from 'react-icons/md'
+import { MdLocalLibrary, MdQuiz, MdTranslate } from 'react-icons/md'
 import logo from "@/assets/images/PNG 1.png"
 import { LuCrown } from 'react-icons/lu'
+import { IoBookSharp } from 'react-icons/io5'
 
 const Sidebar: React.FC = () => {
 
@@ -58,6 +59,21 @@ const Sidebar: React.FC = () => {
           <li className={styles.sidebarMenu_item}>
             <Link to="/e-library">
               <span><MdLocalLibrary /></span><span>Электронная библиотека</span>
+            </Link>
+          </li>
+          <li className={styles.sidebarMenu_item}>
+            <Link to="/e-library">
+              <span><IoBookSharp /></span><span>Ibrat Farzandlari</span>
+            </Link>
+          </li>
+          <li className={styles.sidebarMenu_item}>
+            <Link to="/e-library">
+              <span><MdTranslate /></span><span>Переводчик En-Ru-Uz-Kk</span>
+            </Link>
+          </li>
+          <li className={styles.sidebarMenu_item}>
+            <Link to="/e-library">
+              <span><MdQuiz /></span><span>Quiz</span>
             </Link>
           </li>
         </ul>
